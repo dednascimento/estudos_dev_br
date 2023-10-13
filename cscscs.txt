@@ -1,0 +1,74 @@
+
+# Atalhos e Comandos para Git e GitHub - Uso no terminal ou no VSCODE
+
+
+# Atalhos - VSCode
+Ctrl + L [Lmpar histórico do terminal]
+Ctrl + O [Para salvar o texto]
+Ctrl + X [Sair do editor]
+
+# Configuração inicial do Git
+
+git config--global user.name "Your Name"     | define seu nome global
+git config--global user.email "Your Email"   | define seu email global
+
+ls                              | [Mostrar todos arquivos]
+git init                        | [Criando repositório Git]
+git add .                       | [Para adicionar todos arquvios na pasta]
+git status                      | [Podemos salvar os arquivos que estão sendo considerados]
+git add nome_do_arquivo         | [Para adicionar um arquivo ao stage do Git]
+git rm-r nome_do_arquivo        | [Para remover um arquivo em especifico]
+
+# Salvando alterações
+
+git commit                        | Irá abrir um editor de textos, dentro do terminal 
+git commit-m "minha mensagem"     | Podemos salvar as alterações, sem ter que acessar á um editor
+git commit-am "minha mensagem"    | Aqui podemos adicionar o arquivo ao stage e já salvar a alteração
+
+
+
+# Padrões para nomer commits
+
+- Chore: usado para pequenas tarefas
+git commit-m "chore: removendo arquvios.txt
+---
+- Fix
+git commit-m "fix: correção no cálculo de médias"
+---
+- Feat
+git commit-m "feat: inclusão de função para calcular mediana"
+---
+- Docs
+git commit-m "atualizando o changelog.md"
+---
+
+
+# Git log - histórico/alterações
+git log                        | Visualizar histórico de commit
+
+
+# Registro/Definições
+- Commit: Identificador único do commit
+- Author: Autor do commit
+- Date: Data em que o commit foi feito
+'Mensagem informado no git commit'
+
+
+# Git log - variações 
+
+git log -n 2 *                  | Para visualizar os dois últimos commits
+git log --oneline               | Para visualizar uma versão resumida dos registro de commits
+git log --star                  | Podemos visualizar o registro de uma forma detalhada
+git log --star-n 2 --oneline    | Vizualar os dois últimos commits em uma forma detalhada (É possivel combinar variações)
+
+
+# Histórico e alterações
+
+git checkout meu_arquivo         | Podemos desfazer alterações em arquivos que ainda não foram adicionados ao stage
+git checkout COMMIT_ID           | Podemos voltar o conteúdo de um repositório de conteúdo
+de um determinado commit
+git revert HEAD COMMIT_ID        | Outro commit será criado desfazendo a alteração
+
+
+
+

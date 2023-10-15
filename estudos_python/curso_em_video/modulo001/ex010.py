@@ -8,3 +8,5 @@ real_dolar = real/dolar
 real_euro = real/euro
 
 print("\n- Valor do Dolar atualizado: {}US$. \n- Valor do Euro atualizado: {}€. \n- Seu saldo: R${}.\n\nVocê consegue comprar: \n{:.2f}US$ (Dolares) \n{:.2f}€ (Euros) \n".format(dolar, euro, real, real_dolar, real_euro))
+
+# Concluído

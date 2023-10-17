@@ -25,3 +25,6 @@ print(math.sqrt(num2))
 
 print(math.factorial(num2))
 # factorial --> Fatoração
+
+print(math.hypot(25, 60))
+# hypot --> hipotenusa só precisa do valor do cateto oposto e cateto adjacente

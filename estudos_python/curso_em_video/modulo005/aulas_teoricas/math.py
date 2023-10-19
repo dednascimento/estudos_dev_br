@@ -38,3 +38,7 @@ print(math.hypot(25, 60))
 print(math.sin(45))
 print(math.cos(45))
 print(math.tan(45))
+
+# Formula abaixo é responsável por conversão:
+print(math.radians(45)) #Converta para radianos 
+print(math.degrees(45)) #Converta para radianos 

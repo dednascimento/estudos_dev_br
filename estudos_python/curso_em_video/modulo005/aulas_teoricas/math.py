@@ -29,6 +29,9 @@ print(math.factorial(num2))
 print(math.hypot(25, 60))
 # hypot --> hipotenusa só precisa do valor do cateto oposto e cateto adjacente
 
+
+#---------------->
+
 # Calculo de Seno, Cosseno e Tangente
 # utiliza o [formula](numero_em_radianos)
 

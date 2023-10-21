@@ -36,3 +36,11 @@ Em uma árvore, a organização dos elementos se dá de forma hierárquica, exis
 Cada nó filho pode conter zero, um ou mais de um nó filho.
 
 Uma árvore binária é uma estrutura de dados específica, útil quando precisam ser tomadas decisões bidirecionais em cada ponto de um processo. Note que em uma árvore binária, à esquerda de um nó pai, os filhos da subárvore esquerda são menores e os filhos da subárvore direita são maiores.
+
+--> Pilhas
+
+Quando operamos uma estrutura em que as operações de inserção ou remoção ocorrem só em um dos extremos da lista, chamamos essa estrutura de uma pilha.
+
+A consequência dessa restrição é que o último elemento a entrar na estrutura é o primeiro a ser removido, isso leva as pilhas a serem conhecidas como estruturas “last-in, first-out – LIFO”. A extremidade em que as operações ocorrem é chamada de topo da pilha, a outra é chamada de base da pilha. O processo de inserir um objeto no topo da pilha é chamado de empilhamento (push), o de remover, operação de desempilhamento (pop).
+
+​Uma vez criada a pilha, seus elementos podem ser descarregados mas sempre a partir do topo da pilha.

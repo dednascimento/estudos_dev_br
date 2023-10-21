@@ -44,3 +44,7 @@ Quando operamos uma estrutura em que as operações de inserção ou remoção o
 A consequência dessa restrição é que o último elemento a entrar na estrutura é o primeiro a ser removido, isso leva as pilhas a serem conhecidas como estruturas “last-in, first-out – LIFO”. A extremidade em que as operações ocorrem é chamada de topo da pilha, a outra é chamada de base da pilha. O processo de inserir um objeto no topo da pilha é chamado de empilhamento (push), o de remover, operação de desempilhamento (pop).
 
 ​Uma vez criada a pilha, seus elementos podem ser descarregados mas sempre a partir do topo da pilha.
+
+--> 2.2 - Filas
+
+Em uma fila, as inserções são realizadas em uma extremidade e as remoções na outra. É o esquema first-in, first-out – FIFO. Outra forma de considerar fila é pensar que nela os objetos são retirados de acordo com a ordem com que chegaram. A extremidade na qual são retirados os elementos é chamada de início da fila, onde eles são inseridos é chamado de fim da fila.

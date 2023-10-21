@@ -22,3 +22,17 @@ Uma lista ligada tem importante diferença com relação a vetores porque geralm
 Cada elemento da lista, neste caso o nome de uma pessoa, precisa ter um endereço apontando para o próximo elemento da lista. A lista ligada precisa de um ponteiro apontando para o início da lista e um ponteiro no final da lista apontando para o seu final.
 
 Importante perceber as diferenças nos métodos de busca e adição e eliminação de elementos em uma lista ligada. Depende somente da mudança de endereços de apontadores!
+
+Uma lista ligada não permite acesso direto a qualquer elemento da lista (como em um vetor), isto é, você precisa percorrer todos os elementos de uma lista até encontrar o que você precisa.
+
+Listas ligadas são muito usadas quando não se sabe o tamanho da memória requerida para uma determinada aplicação.
+
+Assim, a lista é preferível ao vetor (lista contígua) quando houver necessidade de inserir e remover elementos. Já em um vetor, é necessário fazer muitos deslocamentos de nomes se for necessário preencher a lista com novos elementos. Mas a vantagem do vetor é o acesso direto, lembre-se!
+
+--> 1.4 – Árvore
+
+Em uma árvore, a organização dos elementos se dá de forma hierárquica, existindo um elemento que fica no topo da árvore, chamado de raiz e os elementos subordinados a ele, seus nós filhos.
+
+Cada nó filho pode conter zero, um ou mais de um nó filho.
+
+Uma árvore binária é uma estrutura de dados específica, útil quando precisam ser tomadas decisões bidirecionais em cada ponto de um processo. Note que em uma árvore binária, à esquerda de um nó pai, os filhos da subárvore esquerda são menores e os filhos da subárvore direita são maiores.

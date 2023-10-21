@@ -11,3 +11,14 @@ Um vetor ou array permite acesso direto a qualquer elemento da lista, isto é, v
 --> 1.2 - Matrizes
 
 Matrizes são estruturas importantes e comuns e consistem de vetores bidimensionais. Considere os dados como se estivesse todos dispostos em uma tabela, isto é, uma estrutura retangular contendo elementos de um mesmo tipo (no caso de matriz homogênea). Pense em uma forma de representar a ocupação de lugares em um teatro. A cada venda de um bilhete é preciso armazenar a informação evitando que duas pessoas tenham o mesmo número de assentos. Observe a praticidade de se marcar assento ocupado. Imagine que uma pessoa tenha reservado o assento 7 na 4ª. fileira.
+
+
+--> 1.3 – Listas ligadas
+
+Se o armazenamento dos elementos da lista anterior estiver em blocos de letras espalhados pela memória e não “colados uns aos outros”, temos uma lista ligada.
+
+Uma lista ligada tem importante diferença com relação a vetores porque geralmente será utilizada quando o tamanho da memória do computador a ser alocado não é conhecido a priori e mais memória deve ser alocada dinamicamente, isto é, durante a execução do próprio programa.
+
+Cada elemento da lista, neste caso o nome de uma pessoa, precisa ter um endereço apontando para o próximo elemento da lista. A lista ligada precisa de um ponteiro apontando para o início da lista e um ponteiro no final da lista apontando para o seu final.
+
+Importante perceber as diferenças nos métodos de busca e adição e eliminação de elementos em uma lista ligada. Depende somente da mudança de endereços de apontadores!

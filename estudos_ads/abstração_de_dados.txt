@@ -8,12 +8,12 @@ Uma lista é uma coleção de elementos que aparecem sequencialmente. São exemp
 
 Um vetor ou array permite acesso direto a qualquer elemento da lista, isto é, você não precisa percorrer todos os elementos de uma lista até encontrar o que você precisa, basta usar o índice da estrutura. Observe a figura abaixo uma parte da memória do computador, as informações estão uma “ao lado” da outra.
 
---> 1.2 - Matrizes
+--> 2 - Matrizes
 
 Matrizes são estruturas importantes e comuns e consistem de vetores bidimensionais. Considere os dados como se estivesse todos dispostos em uma tabela, isto é, uma estrutura retangular contendo elementos de um mesmo tipo (no caso de matriz homogênea). Pense em uma forma de representar a ocupação de lugares em um teatro. A cada venda de um bilhete é preciso armazenar a informação evitando que duas pessoas tenham o mesmo número de assentos. Observe a praticidade de se marcar assento ocupado. Imagine que uma pessoa tenha reservado o assento 7 na 4ª. fileira.
 
 
---> 1.3 – Listas ligadas
+--> 3 – Listas ligadas
 
 Se o armazenamento dos elementos da lista anterior estiver em blocos de letras espalhados pela memória e não “colados uns aos outros”, temos uma lista ligada.
 
@@ -29,7 +29,7 @@ Listas ligadas são muito usadas quando não se sabe o tamanho da memória reque
 
 Assim, a lista é preferível ao vetor (lista contígua) quando houver necessidade de inserir e remover elementos. Já em um vetor, é necessário fazer muitos deslocamentos de nomes se for necessário preencher a lista com novos elementos. Mas a vantagem do vetor é o acesso direto, lembre-se!
 
---> 1.4 – Árvore
+--> 4 – Árvore
 
 Em uma árvore, a organização dos elementos se dá de forma hierárquica, existindo um elemento que fica no topo da árvore, chamado de raiz e os elementos subordinados a ele, seus nós filhos.
 
@@ -37,7 +37,7 @@ Cada nó filho pode conter zero, um ou mais de um nó filho.
 
 Uma árvore binária é uma estrutura de dados específica, útil quando precisam ser tomadas decisões bidirecionais em cada ponto de um processo. Note que em uma árvore binária, à esquerda de um nó pai, os filhos da subárvore esquerda são menores e os filhos da subárvore direita são maiores.
 
---> Pilhas
+--> 5 Pilhas
 
 Quando operamos uma estrutura em que as operações de inserção ou remoção ocorrem só em um dos extremos da lista, chamamos essa estrutura de uma pilha.
 
@@ -45,6 +45,6 @@ A consequência dessa restrição é que o último elemento a entrar na estrutur
 
 ​Uma vez criada a pilha, seus elementos podem ser descarregados mas sempre a partir do topo da pilha.
 
---> 2.2 - Filas
+--> 6 - Filas
 
 Em uma fila, as inserções são realizadas em uma extremidade e as remoções na outra. É o esquema first-in, first-out – FIFO. Outra forma de considerar fila é pensar que nela os objetos são retirados de acordo com a ordem com que chegaram. A extremidade na qual são retirados os elementos é chamada de início da fila, onde eles são inseridos é chamado de fim da fila.

@@ -1,0 +1,13 @@
+- Sabemos que as informações no computador estão armazenadas em células de memória com endereços específicos e muitos detalhes relacionados. Estruturas de dados são formas do cliente (programador, usuário, outro sistema) atuar com o sistema sem ficar preso aos detalhes do armazenamento da informação na memória do computador. Chamamos isso de “abstração de dados” que ganham forma nas estruturas de dados que são decisivas para que o programador expresse os algoritmos de forma mais eficiente.
+
+ 
+
+--> Vetor (array ou Listas contígua)
+
+Uma lista é uma coleção de elementos que aparecem sequencialmente. São exemplos: listas de convidados para uma festa, lista de compras. Nomes também podem ser vistos como listas de letras. Pode-se abstrair uma lista:
+
+Um vetor ou array permite acesso direto a qualquer elemento da lista, isto é, você não precisa percorrer todos os elementos de uma lista até encontrar o que você precisa, basta usar o índice da estrutura. Observe a figura abaixo uma parte da memória do computador, as informações estão uma “ao lado” da outra.
+
+--> 1.2 - Matrizes
+
+Matrizes são estruturas importantes e comuns e consistem de vetores bidimensionais. Considere os dados como se estivesse todos dispostos em uma tabela, isto é, uma estrutura retangular contendo elementos de um mesmo tipo (no caso de matriz homogênea). Pense em uma forma de representar a ocupação de lugares em um teatro. A cada venda de um bilhete é preciso armazenar a informação evitando que duas pessoas tenham o mesmo número de assentos. Observe a praticidade de se marcar assento ocupado. Imagine que uma pessoa tenha reservado o assento 7 na 4ª. fileira.

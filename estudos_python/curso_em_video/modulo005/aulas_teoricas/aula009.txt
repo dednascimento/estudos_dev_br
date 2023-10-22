@@ -1,0 +1,26 @@
+# Nessa aula, vamos aprender operações com String no Python. As principais operações que vamos aprender são o Fatiamento de String, Análise com len(), count(), find(), transformações com replace(), upper(), lower(), capitalize(), title(), strip(), junção com join().
+
+
+-----> String e Textos.
+
+Cada string armazenada oculpa uma mini espaço na memório do computador. só que não o texto em sí. mas da forma abaixo:
+
+texto = 'Curso em Vídeo Python' (O texto possuí 21 caractéres ao total - contém espaços)
+         [0][1][2][3][4][5][6][7][8][9][10]... [18][19][20].
+
+-------> Forma para manipular o texto
+
+XX:YY:ZZ
+
+XX = inicio
+YY = Fim
+ZZ = Contagem de 1 em 1, 2 em 2... (Defina o número que deseja)
+
+# Se quiser que um valor não seja definido não o Defina
+Exemplo:
+
+# Contagem do inicio ao 10 de 1 em 1
+:10:1
+
+# Contagem do 90 ao final, contando de 2 em 2
+90::2

@@ -2,14 +2,10 @@
 
 num = int(input('\nDigite um número de 0 á 9999: \nR: '))
 
-
 u = num // 1 % 10
 d = num // 10 % 10
 c = num // 100 % 10
 m = num // 1000 % 10
-
-# 1 2 3 4
-# m c d u
 
 print("\nAnálisando o número {}...\n...\n... \n".format(num))
 print("Unidade: {}".format(u))

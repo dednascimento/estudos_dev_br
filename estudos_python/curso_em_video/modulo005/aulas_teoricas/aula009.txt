@@ -24,3 +24,7 @@ Exemplo:
 
 # Contagem do 90 ao final, contando de 2 em 2
 90::2
+
+-------> Análise de Textos
+
+Se deseja análisar temos algumas formulas para análise de texto.

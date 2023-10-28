@@ -48,3 +48,28 @@ Atomicidade em Sistema de Arquivos se refere á 'Tratamento de Erros'
 Para entender melhor o conceito de atomicidade em sistemas de arquivos, considere um exemplo. Suponha que você esteja gravando um arquivo em um sistema de arquivos e, durante esse processo, ocorra um erro, como uma falha de energia. Se a operação não for atômica, o arquivo pode ser gravado parcialmente, deixando-o em um estado corrompido e inutilizável. No entanto, se a operação for realizada atomicamente, o arquivo não será alterado até que a operação seja concluída com sucesso, garantindo que ele permaneça consistente, mesmo em caso de falha.
 
 
+-----------------------------------------------------
+
+Tabelas também são chamadas de 'Entidades' é  uma maneira de chamar tabelas em um contexto de banco de dados. Em modelagem de dados, uma "entidade" é frequentemente usada para descrever tabelas ou objetos que representam algo no mundo real. Cada tabela em um banco de dados geralmente corresponde a uma entidade no contexto da modelagem de dados. Portanto, sim, pode-se usar o termo "entidade" para se referir a tabelas em um sistema de banco de dados. Mais uma vez, peço desculpas pelo mal-entendido anterior e agradeço por esclarecer sua pergunta.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

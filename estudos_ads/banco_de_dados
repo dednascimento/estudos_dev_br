@@ -43,4 +43,8 @@ SISTEMAS BASEADOS EM ARQUIVOS
 
 -----------------------------------------------------
 
+Atomicidade em Sistema de Arquivos se refere á 'Tratamento de Erros'
+
+Para entender melhor o conceito de atomicidade em sistemas de arquivos, considere um exemplo. Suponha que você esteja gravando um arquivo em um sistema de arquivos e, durante esse processo, ocorra um erro, como uma falha de energia. Se a operação não for atômica, o arquivo pode ser gravado parcialmente, deixando-o em um estado corrompido e inutilizável. No entanto, se a operação for realizada atomicamente, o arquivo não será alterado até que a operação seja concluída com sucesso, garantindo que ele permaneça consistente, mesmo em caso de falha.
+
 

@@ -1,3 +1,4 @@
+--------------------------------------------------
 Projeto de Banco de Dados (PBD)
 
 1. Estudo da Viabilidade
@@ -8,3 +9,14 @@ Projeto de Banco de Dados (PBD)
 6. Operação 
 
 ---> PBD e Projeto dos Prog. e Aplicação
+--------------------------------------------------
+
+Objetivos de um bom projeto
+
+--- Para projetar corretamente um banco de dados, você deve assegurar que ele:
+
++ Seja capaz de Armazenar dados requeridos
++ Contenha estruturas de tabelas eficazmente projetadas
++ Imponha integridade de dados nos níveis de campos
++ Suporte regras de negócio apropriadas
++ Permite crescimento futuro dele mesmo

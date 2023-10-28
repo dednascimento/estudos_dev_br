@@ -1,4 +1,5 @@
 
+-----------------------------------------------------
 Caracteristicas dos Sistemas de Bancos de Dados (SBD)
 
 - Natureza Autodescritiva
@@ -6,3 +7,17 @@ Caracteristicas dos Sistemas de Bancos de Dados (SBD)
 - Uso de abstração de dados
 - Múltiplas visões
 - "Padronização"
+
+-----------------------------------------------------
+
+Vantagens - SBD
+
+- Redução da Redundância
+(No SBD, não pode ter o mesmo dado em 500x coisas diferentes, conseguimos reduzir e ter mais controles dessas informações)
+
+- Controle de Acesso
+(Controlar que tem acessibilidade e qual usuário terá privilégios a determinados dados)
+
+- Estruturas eficientes de Armazenamentos
+- Representação de Estruturas Complexas
+- Manutenção da Integridade

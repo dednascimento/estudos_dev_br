@@ -1,0 +1,75 @@
+
+-----------------------------------------------------
+Caracteristicas dos Sistemas de Bancos de Dados (SBD)
+
+- Natureza Autodescritiva
+- Isolamento aplicação - dados
+- Uso de abstração de dados
+- Múltiplas visões
+- "Padronização"
+
+-----------------------------------------------------
+
+Vantagens - SBD
+
+- Redução da Redundância
+(No SBD, não pode ter o mesmo dado em 500x coisas diferentes, conseguimos reduzir e ter mais controles dessas informações)
+
+- Controle de Acesso
+(Controlar que tem acessibilidade e qual usuário terá privilégios a determinados dados)
+
+- Estruturas eficientes de Armazenamentos
+- Representação de Estruturas Complexas
+- Manutenção da Integridade
+
+-----------------------------------------------------
+
+SISTEMAS BASEADOS EM ARQUIVOS
+
+- Antecessores aos Banco de Dados
+- São estruturas específicas de armazenamentos de dados
+- Existem desde 1950
+- Armazenados em 'Discos Rígidos (HDs), CDs, Disquetes, Fitas Magnéticas, Pendrivers, Cartões Perfurados etc.
+- Qualquer falha pode causar perda total em relação aos dados
+
+--> O maior problema que apesar de alguns softwares serem muito eficientes, quando a complexidade aumenta dos dados e o número fica desvantajoso para esse tipo armazenamento. Geram cooisas como:
+
+- Inconsistência e redundância de dados: Aplicações evoluem com o tempo e há formatos demais, gerando, muitas vezes, repetição de dados
+- Dificuldade de acesso aos dados: Os dados nos arquivos normalmente só podem ser acessados de uma forma e, às vezes, isso pode atrasar o acesso à informação
+- Isolamento dos dados: Muitas vezes o compartilhamento de dados pode ser dificultado pois nem sempre quem os recebe possui o mesmo software (e/ou versão) para acessar.
+- Falta de integridade: Realizar buscas de dados em arquivos pode resultar em dados duplicados ou ignorados, devido ao formato de como são gerados ou guardados.
+- Falta de atomicidade: Nem sempre existem mecanismos de tratamento de erros (causados por qualquer motivo) em arquivos e os dados podem ser perdidos.
+- Falta de segurança: Muitas vezes a proteção dos arquivos é responsabilidade do sistema operacional e, muitas vezes, dados sensíveis são rapidamente acessados.
+
+-----------------------------------------------------
+
+Atomicidade em Sistema de Arquivos se refere á 'Tratamento de Erros'
+
+Para entender melhor o conceito de atomicidade em sistemas de arquivos, considere um exemplo. Suponha que você esteja gravando um arquivo em um sistema de arquivos e, durante esse processo, ocorra um erro, como uma falha de energia. Se a operação não for atômica, o arquivo pode ser gravado parcialmente, deixando-o em um estado corrompido e inutilizável. No entanto, se a operação for realizada atomicamente, o arquivo não será alterado até que a operação seja concluída com sucesso, garantindo que ele permaneça consistente, mesmo em caso de falha.
+
+
+-----------------------------------------------------
+
+Tabelas também são chamadas de 'Entidades' é  uma maneira de chamar tabelas em um contexto de banco de dados. Em modelagem de dados, uma "entidade" é frequentemente usada para descrever tabelas ou objetos que representam algo no mundo real. Cada tabela em um banco de dados geralmente corresponde a uma entidade no contexto da modelagem de dados. Portanto, sim, pode-se usar o termo "entidade" para se referir a tabelas em um sistema de banco de dados. Mais uma vez, peço desculpas pelo mal-entendido anterior e agradeço por esclarecer sua pergunta.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

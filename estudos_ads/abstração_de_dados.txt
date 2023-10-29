@@ -48,3 +48,7 @@ A consequência dessa restrição é que o último elemento a entrar na estrutur
 --> 6 - Filas
 
 Em uma fila, as inserções são realizadas em uma extremidade e as remoções na outra. É o esquema first-in, first-out – FIFO. Outra forma de considerar fila é pensar que nela os objetos são retirados de acordo com a ordem com que chegaram. A extremidade na qual são retirados os elementos é chamada de início da fila, onde eles são inseridos é chamado de fim da fila.
+
+
+
+.......

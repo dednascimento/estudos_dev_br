@@ -1,0 +1,54 @@
+
+
+### 1. Declaração de Variáveis:
+a. Crie uma variável chamada `anoNascimento` e atribua a ela o ano de nascimento de uma pessoa.
+b. Em seguida, crie uma variável chamada `idade` e atribua a ela a idade calculada com base no ano de nascimento e o ano atual. 
+### OK
+
+
+
+
+
+
+### 2. Objeto:
+a. Crie um objeto chamado `livro` com propriedades como `titulo`, `autor`, e `anoPublicacao`.
+b. Escreva uma função chamada `infoLivro` que aceite um objeto livro como parâmetro e imprima informações sobre o livro.
+### OK
+
+### 3. Operadores (Atribuição):
+a. Crie uma variável chamada `saldo` e atribua a ela um valor monetário.
+b. Escreva uma função chamada `realizarCompra` que aceite o valor da compra como parâmetro e atualize o saldo após a compra.
+### OK
+
+
+### 4. Básico de Array:
+a. Crie um array chamado `numeros` com uma sequência de números.
+b. Escreva uma função chamada `somaArray` que aceite um array como parâmetro e retorne a soma de todos os seus elementos.
+### OK
+
+### 5. Boolean:
+a. Crie uma função chamada `verificaIdade` que aceite a idade como parâmetro e retorne `true` se a pessoa for maior de idade e `false` se for menor.
+### OK
+
+
+### 6. Null & Undefined:
+a. Crie uma função chamada `verificaValor` que aceite um parâmetro e retorne `true` se o valor não for `null` nem `undefined` e `false` caso contrário.
+### OK
+
+
+### 7. Básico de Função:
+a. Crie uma função chamada `calculaMedia` que aceite um array de números como parâmetro e retorne a média deles.
+### OK
+
+
+### Exercícios Combinados:
+a. Crie uma função chamada `verificaLivro` que aceite um objeto livro como parâmetro e retorne `true` se o livro foi publicado nos últimos 10 anos e `false` caso contrário.
+b. Utilize a função `verificaLivro` com o objeto `livro` criado anteriormente.
+### OK
+
+### Exercício Final:
+Crie um programa que:
+1. Declare um array chamado `pessoas` contendo objetos representando diferentes pessoas. Cada objeto deve ter propriedades como `nome`, `idade`, `profissao`, e `temCarro` (um booleano indicando se a pessoa possui carro ou não).
+2. Escreva uma função chamada `filtraPessoas` que aceite o array de pessoas como parâmetro e retorne um novo array contendo apenas as pessoas que são maiores de idade e têm carro.
+3. Imprima o resultado.
+

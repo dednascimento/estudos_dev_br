@@ -2,23 +2,19 @@ Algoritmo "exercicio_duracao"
 
 Var
 
-   hora, minutos, segundos: inteiro
-   duracao: inteiro
-   conv: caractere
+   horas, minutos, segundos, resto, duracao: inteiro
 
 Inicio
 
       escreva("Digite a duração em segundos: ")
       leia(duracao)
       
-      hora <- duracao\3600
-      minutos <- duracao\60
-      segundos <- hora*3600
+      horas <- duracao \ 3600 // 1 hora = 3600 segundos
+      resto <- duracao % 60 // Resto para calculo
       
-      escreva(hora ,":", minutos, ":", segundos)
+      minutos <- resto \ 60 // Divisão int (Resto) = minutos
+      segundos <- resto % 60 // Resto da divisão = segundos
       
-      
-
-
+      escreva(horas ,":", minutos, ":", segundos)
 
 Fimalgoritmo

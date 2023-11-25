@@ -1,46 +1,30 @@
 Algoritmo "exercicio_tempo_de_jogo"
 
 Var
-   horaInicial, horaFinal, duracao: inteiro
-   min, max: inteiro
-   resto, total: inteiro
+
+   hora_inicio, hora_termino, duracao_jogo: inteiro
 
 Inicio
-      //Atribuindo máximo e mínimo
-      min <- 1
-      max <- 24
 
-      escreva("Hora Inicial: ")
-      leia(horaInicial)
+      // Entrada dos valores (Inicio e Fim)
+      escreva("Hora inicio = ")
+      leia(hora_inicio)
 
-      escreva("Hora Final: ")
-      leia(horaFinal)
-      
-      // Descobrindo o valor total
-      resto <- max - horaInicial
-      total <- horaInicial + horaFinal
-           
-           
-      // Trabalhando na lógica
-      se ((total > 24) ou (horaInicial > horaFinal)) e (resto + horaInicial = 24) entao
-           duracao <- (horaInicial - (max - total))
-           
-           se (total = 24) ou (duracao = 24) entao
-              duracao <- horaInicial - horaFinal
+      escreva("Hora final = ")
+      leia(hora_termino)
 
-              escreva("Sim, duracao = 24")
-              escreva(duracao)
 
-           senao
-                escreva("Sim, alternativo")
-                escreva(duracao)
-           fimse
-
+      se ( hora_inicio = hora_termino ) entao
+         duracao_jogo <- 24
       senao
-              escreva("Não")
+         // Verificação Lógica ( Horário inicio e Horário Fim )
+         se (hora_termino < hora_inicio)entao
+            hora_termino <- hora_termino + 24
+         fimse
+
+         duracao_jogo <- hora_termino - hora_inicio
       fimse
-
-
-
-      //duracao <- (max - ( max - (horaInicial + horaFinal)))
+      
+      escreva("A duração do jogo foi de: ", duracao_jogo)
+      
 Fimalgoritmo

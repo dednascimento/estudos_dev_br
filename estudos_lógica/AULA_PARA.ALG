@@ -1,5 +1,7 @@
 Algoritmo "para_aula"
 
+          // òtimo para quando se sabe quantas vezes irá repetir
+
 Var
 
    n, soma: inteiro

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de Atributos e Seletores</title>
+
+    <!-- Importando o CSS dentro do HTML -->
+    <style>
+
+    .fundo-vermelho {
+        background: red;
+    }
+
+    .borda-azul {
+        border: 5px solid blue;
+    }
+
+
+        
+    </style>
+    <!-- Cuidado com conflitos no CSS, lembrando que se tivermos seletores iguais, o que for lido por ultimo prevalece como 'hierarquia/peso' -->
+</head>
+<body>
+    <!-- Caso seja necessário atribuir mais um de seletor CSS, separe por espaços o outro seletor CSS -->
+    <h1 id="cabecalho-um" class="fundo-vermelho borda-azul">Titulo vermelho, <b>com</b> borda</h1>
+    <h1 id="cabecalho-dois" class="fundo-vermelho">Titulo vermelho, <b>sem</b> borda</h1>
+</body>
+</html>

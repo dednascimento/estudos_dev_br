@@ -60,15 +60,200 @@
 
 
     <!-- Span e Div -->
+    <br>
+    <hr>
 
-    <h1>Diferença entre e '< span >' para '< div >'. O span Apenas troca estética.</h1>
+    <h1>Diferença entre e '< span >' para '< div >'.</h1>
+    <p>O span Apenas troca estética. Já a div altera a semantica também. Então caso você queira destacar algo por apenas aparência mesmo, utilize 'span' se a mudança não for significativa para o usuário.</p>
+
+    <!-- Tags de Efeito no Texto -->
+    <br>
+    <hr>    
+
+    <h1>Diferença semantica de algumas tags</h1>
+
+    <br>
+    <p>----</p>
+
+    <del>Tag - 'Del'(Delete):</del>
+    <p>Peso semantico, realmente é exibido como se tivessem deletado o texto da tag.</p>
+
+    <br>
+
+    <s>Tag - 's'(Strikethrough/Taxado):</s>
+    <p>Diferente do Del esse é por mera estética</p>
+
+    <br><br>
+    <p>----</p>
+    
+    <ins>Tag - 'ins'(Insert):</ins>
+    <p>Inserir uma palavra(Semantico)</p>
+    
+    <br>
+    
+    <u>Tag - 'u'(Underline):</u>
+    <p>Sublinhar uma palavra(Estético)</p>
+    
+    <br><br>
+    <p>----</p>
+    
+    <small>Tag - 'small'</small>
+    <p>Exibir textos 'pequeno' (Semantico)</p>
+    
+    <br><br>
+    <p>----</p>
+
+    <h3>2<sup>2</sup></h3>
+    <p>Tag - 'sup': serve para elever um número (Semântico)</p>
+    
+    <h3>H<sub>2</sub>O</h3>
+    <p>Tag - 'sub': serve para diminuir um número (Semântico)</p>
+    
+    <br><br>
+    <p>----</p>
+
+    <h3>Citação e Itálico</h3>
+
+    <q cite="https://developer.mozilla.org/pt-BR/">
+        Quando queremos fazer uma citação semantica, ao ínves de usarmos apenas as 'aspas', podemos usar a tag 'q' com o atributo 'cite' referênciando nossa citação.
+    </q>
+
+    <blockquote cite="https://developer.mozilla.org/pt-BR/">
+        Caso opte por um bloco separado do seu texto/blog temos a opção do 'blockquote' que é uma tag própria para separar a citação, já vem estilizada, mas podemos ajusta-la, e dentro delas podemos ter outras tags como 'p', 'h1'...
+    </blockquote>
+
+    
+    <!-- Estilo e formatação de texto -->
+    <br>
+    <hr>    
+
+    <h1>Tag - 'Code' para códigos</h1>
+    
+    <br>
+    <code>Texto monoespaçado para códigos</code>
+    <br>
+
+    <code>print("Olá Mundo.") - python</code>
+    <br>
+
+    <br>
+    <hr>
+
+    <h1>Tag - 'pre' para textos pré-formatados (Com espaços ajustados)</h1>
+
+    <pre>
+        Texto pré-formatados.
+        Cada espaço dentro dessa tag importa
+
+        t
+         e
+          s
+           t
+            e
+
+        Estão caso seja um código ou caso seja um texto já formatado, indicamos a utilização dessa forma.
+    </pre>
+
+
+    <!-- Article bem usada para 'Artigo', mencionar algo dito em outro site, um artigo, revista, jornal... -->
+    <article>
+        <h4>Um artigo realmente impressionante</h4>
+        <p>Lotes de texto incrível.</p>
+    
+        <!-- Já address é descendênte direto da outra tag, pois ele link aonde foi dito tall coisa, ou o próprio 'endereço' de contato, seja da menção, ou da tag 'body', onde ele define o contato, email, endereço do criador para o usuário... -->
+        <address>
+            Voce pode contatar o autor em
+            <a href="#">www.teste.com</a>.  <br>
+            Se encontrar qualquer bug, por favor
+            <a href="#">contate o administrador do site</a
+            >.<br>
+            Você tambem pode querer nos visitar:<br>
+            Mozilla Foundation<br>
+            1981 Landings Drive<br>
+            Building K<br>
+            Mountain View, CA 94043-0801<br>
+            USA
+        </address>
+    </article>
+
+    <br>
+    <p>---</p>
+
+    <!--  Tag para lateral da página, mas lembre-se, sozinha a tags não é efetiva, precisa ser estilizada, pode até ter o significado semântico, mas aparentemente não irá mudar nada ao usuário -->
+    <h2>Aside</h2>
+    <br>
+
+    <aside>O elemento HTML representa uma seção de uma página que consiste de conteúdo que é tangencialmente relacionado ao conteúdo do seu entorno, que poderia ser considerado separado do conteúdo. Essas seções são, muitas vezes, representadas como barras laterais. Elas muitas vezes contem explicações laterais, como a definição de um glossário; conteúdo vagamente relacionado, como avisos; a biografia do autor; ou, em aplicações web, informações de perfil ou links de blogs relacionados.</aside>
 
 
 
-    <p></p>
+    <br>
+    <p>---</p>
+
+    <h2>Header(Introdução/Cabeçalho/Navegação princípal)</h2>
+
+    <header>
+        <p>Header seria o Cabeçalho da página, pois o mesmo sempre estará no inicio, nele pode conter outras tags associadas ao menu princípal, pode conter também, a própria tag 'nav', para os menus de Navegação</p>
+
+        <nav>
+            <ul>
+                <li><a href="#">Link1</a></li>
+                <li><a href="#">Link2</a></li>
+                <li><a href="#">Link3</a></li>
+            </ul>
+        </nav>
+
+        <p>Mas lembre-se, as tags não irão mudar muito no peso estético sem o CSS ou algum framework, se deseja melhorar é preciso dar esse próximo passo. Mas até então na semântica está tudo certo. </p>
+    </header>
+
+    <br>
+    <p>---</p>
+
+    <h2>Main(Conteúdo princípal)</h2>
+
+    <main>
+        A tag 'main' representa o conteúdo princípal do 'body' da página, no caso ela deve ser uma tags única na semantica da página
+    </main>
+
+    <br>
+    <p>---</p>
+
+    <h2>Section(Sessões Genéricas)</h2>
+   
+    <section>Geralmente o section representa diversos trechos genéricos de um site quando não conseguimos especifica-lo melhor, por exemplo, em um blog, provavelmente vamos trabalhar com 'section' para separar diferentes blogs do mesmo conteúdo.</section>
+   
+    <br>
+    <p>---</p>
+
+    <h2>Footer(Rodapé)</h2>
+
+    <footer>
+        O 'footer' seria o rodapé da página, pode estar tanto assiciado ao contéudo princípal, á uma mensão, á um bloco especifico, o importante é que ele é o rodapé daquele determinado conteúdo.
+    </footer>
 
 
+    <br>
+    <p>---</p>
 
+    <h2>Glossário(Descrição de Termos)</h2>
+
+    <dl>
+        <dt> HTML Definition List (dl)</dt>
+        <dd>
+            Engloba uma lista de pares de termos e descrições. Um uso comum para este elemento é para implementar um glossário ou exibir metadados.
+        </dd>
+    </dl>
+      
+    <br>
+    <p>---</p>
+
+    <h2>Abreviação(abbr)</h2>
+
+    <p>Obama é presidente dos 
+        <abbr title="Estados Unidos da América">EUA</abbr>
+    </p>
+
+    <!-- Ela precisa conter a tag 'title', especificando qual o significado daquela abreviação na semântica da página.-->
 
 </body>
 </html>

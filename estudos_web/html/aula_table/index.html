@@ -7,17 +7,24 @@
 
     <!-- Boder-collapse para as bordar se juntarem e não virar uma margim. -->
     <style>
+
+        table {
+            border-collapse: collapse; 
+            width: 600px;
+        }
+
+        .table-responsible {
+            max-width: 100%;
+            overflow-x: auto;
+        }
+
+
         table caption {
             font-style: italic;
             font-size: 10px;
             text-align: right;
             caption-side: bottom;
             margin-top: 5px;
-        }
-
-
-        table {
-            border-collapse: collapse; 
         }
 
         table th, table td {
@@ -37,49 +44,55 @@
 
 </head>
 <body>
-    <table>
-        <!-- Description table -->
-        <caption>
-            Uma descrição para tabela.
-        </caption>
 
-        <!-- Cabeçalho table -->
-        <thead>
-            <tr> <!-- This row / Linha -->
-                <th>Título 1</th> <!-- Título da table (this head) -->
-                <th>Título 2</th>
-                <th>Título 3</th>
-            </tr>
-        </thead>
+    <div class="table-responsible">
+        <table>
+            <!-- Description table -->
+            <caption>
+                Uma descrição para tabela.
+            </caption>
 
-        <!-- Corpo table -->
-        <tbody>
-            <tr> <!-- This row / Linha -->
-                <td>Texto 1</td> 
-                <td>Texto 2</td>
-                <td>Texto 3</td>
-            </tr>
+            <!-- Cabeçalho table -->
+            <thead>
+                <tr> <!-- This row / Linha -->
+                    <th>Título 1</th> <!-- Título da table (this head) -->
+                    <th>Título 2</th>
+                    <th>Título 3</th>
+                </tr>
+            </thead>
 
-            <tr> <!-- This row / Linha -->
-                <td>Texto 3</td> 
-                <td>Texto 4</td>
-                <td>Texto 5</td>
-            </tr>
+            <!-- Corpo table -->
+            <tbody>
+                <tr> <!-- This row / Linha -->
+                    <td>Texto 1</td> 
+                    <td>Texto 2</td>
+                    <td>Texto 3</td>
+                </tr>
 
-            <tr> <!-- This row / Linha -->
-                <td>Texto 6</td> 
-                <td>Texto 7</td>
-                <td>Texto 8</td>
-            </tr>
-        </tbody>
+                <tr> <!-- This row / Linha -->
+                    <td>Texto 3</td> 
+                    <td>Texto 4</td>
+                    <td>Texto 5</td>
+                </tr>
 
-        <!-- Foorter table -->
-        <tfoot>
-            <tr> <!-- This row / Linha -->
-                <td colspan="2">Valor total:</td>
-                <td>R$ 1.000</td>
-            </tr>
-        </tfoot>
-    </table>
+                <tr> <!-- This row / Linha -->
+                    <td>Texto 6</td> 
+                    <td>Texto 7</td>
+                    <td>Texto 8</td>
+                </tr>
+            </tbody>
+
+            <!-- Foorter table -->
+            <tfoot>
+                <tr> <!-- This row / Linha -->
+                    <td colspan="2">Valor total:</td>
+                    <!-- coldspan = Quantas células vai valer -->
+                    <td>R$ 1.000</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+
 </body>
 </html>

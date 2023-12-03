@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Quando colocamos dois seletores juntos, queremos que na tag contenha esses dois atributos, tanto pai quanto filha, ao colocarmos o mouse por cima é explicado */
+
+.filha.pai {
+    color: aqua;
+}
+
+
+/* Quando definirmos o color 'initial' estamos ditando que será o valor inicial, 'inherit' será um valor herdado da tag 'pai' */
+div {
+        color: initial;
+        margin-left: 20px;
+        font-size: 50px;
+}
+
+/* Usamos o '>' para selecionar algo especifico ligação ao seletor anterior (No exemplo estamos escolhendo neta, que tem ligação com a fila e o pai) */
+.pai > .filha > .neta {
+    color: red;
+}

@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body div.main-content section.section-primary h2.heading {
+    color: red;
+}
+
+body div.main-content {
+    margin-left: 25px;
+    margin-top: 25px;
+    width: 500px;
+}

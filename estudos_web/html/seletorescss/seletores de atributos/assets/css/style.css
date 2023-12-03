@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ` ^= ` Começa com */
+[comeca ^="vermelho"] {
+    color: red;
+}
+
+
+/* ` *= ` Contém */
+[contem *="verde"] {
+    color: green;
+}
+
+/* ` $= ` Termina com */
+[termina $="cinza"] {
+    color: silver;
+}
+
+/* ` ~= ` Caso contenha o valor X*/
+[selecioneCor ~="roxo"] {
+    color: purple;
+}
+
+/* ` |= ` Começa com 'palavra' seguida por um '-' */
+[seguida |="azul"] {
+    color: blue;
+}

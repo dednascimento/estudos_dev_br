@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos sobre input</title>
+</head>
+<body>
+    
+
+    <!-- 
+        -- Método GET encaminha pela URL da página o arquivo.
+        -- Target controla se irá atualizar na mesma página ou em outra '_blank' abre em outra gia
+        -- Autocomplete não permite o usuário 'Autocompletar' o formulário.
+    -->
+
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        
+        <p>
+            O meu formulário
+        </p>  
+
+
+        <fieldset>    
+            <p>
+                <!-- Atributo ` name="" ` da tag atribui á um nome aquele form, e qual tipo de informação será devolvida ao servidor-->
+            <input type="text" id="nome" name="nome" placeholder="Seu nome"> 
+            </p>
+            <p>
+            <!-- O input fica desabilitado, impossível de interagir com a propriedade abaixo: -->
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" disabled> 
+            </p>
+            <p>
+            <!-- Podemos até interagir, mas o input não pode ser editado ou definido -->
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" readonly> 
+            </p>
+            <p>   
+            <!-- Atribuimos um valor inicial/padrão a ele, a partir disso o usuário irá conseguir editar -->
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" value="Deivid"> 
+            </p>
+            <p>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" value="Em aberto" readonly> 
+            </p>
+        </fieldset>
+    </form>
+
+
+</body>
+</html>

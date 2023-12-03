@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Nome do seletor com mais
+--> "Adjacente Sibling Combinator" */
+
+/* Literalmente todo h1 que vir depois de um 'p' no código receberá a cor vermelha */
+
+/* .pai p+h1{
+    color: rgb(47, 68, 79);
+    margin-top: 25px;
+} */
+
+
+/* Nome do seletor com mais
+--> "Geral Sibling Combinator" */
+
+.pai p+h1{
+    color: rgb(47, 68, 79);
+    margin-top: 25px;
+}
+
+/* General = Todos, logo todos os itens 'p' que seguirem a condição vindo após o h1, irão ficar da cor e do tamanho abaixo */
+.pai h1~p{
+    color: rgb(46, 147, 201);
+    font-size: 25px;
+}
+
+/* Criamos o atributo no HTML agora estamos chamando esse atributo no CSS com o seletor []usado para atributos*/
+[pai] {
+    color: #222;
+    font-size: 50px;
+}

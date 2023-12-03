@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Preciso de todo H1 e P que está dentro da Section, que está dentro da Div no Body */
+
+body div section h1,
+body div section p {
+    color: red;
+}
+
+/* Podemos separar seletores que vamos atribuir o mesmo estilo com ',' = 'e' */

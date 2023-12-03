@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+form input, form button{
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-right: 0;
+}
+
+header form {
+    display: inline;
+}
+
+header a {
+    margin-left: 30%;
+}
+
+main {
+    max-width: 100%;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 50px;
+}
+
+.sections-content {
+    padding: 25px;
+    max-width: 100%;
+    overflow-x: scroll;
+}
+
+.sections-content section p abbr {
+    text-decoration: none;
+}
+
+.title-content {
+    text-align: left;
+    font-style: italic;
+    margin-bottom: 0px;
+}

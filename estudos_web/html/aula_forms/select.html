@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos sobre Select</title>
+</head>
+<body>
+
+    <!-- É possível selecionar diversas opções com grupos de Select, usando o optgroup -->
+    <form action="get">
+        <select name="select" id="select">
+            <option value="escolha" label="Escolha algum tipo: " selected disabled></option>
+            <optgroup label="Dados pessoais">
+                <option value="name" label="Nome"></option>
+                <option value="age" label="Idade"></option> 
+                <!-- Não se esqueça que o value é o valor que chega no banco de dados, 
+                     e label é o que vai ser visível ao usuário -->
+                <option value="city" label="Cidade"></option>
+                <option value="date" label="Data"></option>
+                <option value="gener" label="Genêro"></option>
+            </optgroup>
+            <optgroup label="Hobbies">
+                <option value="comer" label="Comer"></option>
+                <option value="higiente" label="Cabelo, Unhas..."></option>
+                <option value="musica" label="Música"></option>
+                <option value="filme" label="Filmes"></option>
+                <option value="festas" label="Festas"></option>
+            </optgroup>
+        </select>
+    </form>
+    
+</body>
+</html>

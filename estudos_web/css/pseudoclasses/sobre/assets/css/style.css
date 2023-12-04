@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Transition é um tag para dar um efeito de transição para o texto */
+.title {
+    transition: all 300ms ease-in-out;
+}
+
+.title:hover {
+    background-color: red;
+}
+
+a {
+    font-size: 25px;
+}
+
+/* Links que foram visitados */
+a:visited {
+    color: aqua;
+}
+
+/* Links normais */
+a:link {
+    color: rgb(84, 82, 84);
+}
+
+a:hover {
+    color: white;
+    background-color: darkmagenta;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+    background-color: darkred;
+    text-decoration: none;
+}
+
+input {
+    margin: 10px;
+    margin-left: 25px;
+}
+
+
+/* Criamos uma condição de estilo, onde quando o input ficar em focu, no caso quando for clicado para digitar, ele ficará no estado abaixo */
+input:focus {
+    box-shadow: 0 0 5px rgb(28, 28, 184, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+
+
+/* Definimos quando o input estiver desabilitado, com isso também setamos o cursor como 'not-allower' bloqueado de clicar */
+input:disabled {
+    background-color: darkcyan;
+    cursor:not-allowed
+}
+
+/* Também temos o enabled, significa que vamos atribuir para todos input que não estiverem ou conterem o atributo 'enabled' */
+
+
+
+
+/* Por conta do seletor adjacente, conseguimos definir uma condição para nosso 'p' que é irmão do 'menu' */
+#menu:checked + p {
+    background-color: red;
+}
+
+
+/* Pseudoclasse 'firt/last-child' usadas para selecionarem filhos a partir da primeira considerada tag pai  */
+.pai .lista li:first-child {
+    background-color: rgb(0, 255, 225);
+}
+
+.pai .lista li:last-child {
+    background-color: red;
+}

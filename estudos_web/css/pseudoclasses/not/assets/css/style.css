@@ -2,3 +2,28 @@
     margin: 0;
     padding: 0;
 }
+
+p:not(.meio) {
+    color: blue;
+}
+
+.texto {
+    font-size: 24px;
+    color: blue;
+}
+
+#termos:not(:checked) + label {
+    color: red;
+    text-decoration: underline;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Not é uma pseudoclasse de negação, então todas tag 'p' vão receber o estilo definido, EXCETO á tag da condição 'not(seletor)' */
+
+/* No outro exemplo, estamos vendo uma mistura do 'Not' com o outro seletor adjacente. */

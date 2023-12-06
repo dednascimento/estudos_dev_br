@@ -1,4 +1,28 @@
 * {
     margin: 0;
     padding: 0;
+    font-size: 40px;
+}
+
+/* A tag abaixo é um seletor de irmãos, então qualquer atributo que for irmão será afetado por ela */
+
+/* Números pares entre os irmãos */
+ul li:nth-child(even) {
+    background-color: blue;
+}
+
+/* Números impares entre os irmãos*/
+ul li:nth-child(odd) {
+    background-color: purple;
+}
+
+/* Condição vai ser atribuida de 5 em 5 */
+ul li:nth-child(5n) {
+    color: white;
+}
+
+/* Condição conta de 3 em 3, e vai começar no indice '3-2'(1 - primeiro item) */
+ul li:nth-child(3n-2) {
+    color: rgb(255, 255, 255);
+    background-color: silver;
 }

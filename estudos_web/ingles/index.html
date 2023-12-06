@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #word-display {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #result {
+            font-size: 18px;
+            color: green;
+            margin-bottom: 20px;
+        }
+
+        #audio-level {
+            margin-top: 20px;
+        }
+    </style>
+    <title>English Learning App</title>
+</head>
+<body>
+    <h1>English Learning App</h1>
+
+    <div id="word-display">Word: <span id="word"></span></div>
+    <button onclick="startListening('easy')">Start Speaking (Easy)</button>
+    <button onclick="startListening('medium')">Start Speaking (Medium)</button>
+    <button onclick="startListening('hard')">Start Speaking (Hard)</button>
+    <br><br><br>
+    <div id="result"></div>
+    <div id="audio-level">Audio Level: <span id="audio-level-indicator">0</span></div>
+
+    <script>
+        let recognition;
+        let audioLevelIndicator = document.getElementById('audio-level-indicator');
+
+        function displayWord(word) {
+            document.getElementById('word').innerText = word;
+            speakWord(word);
+        }
+
+        async function speakWord(word) {
+            const utterance = new SpeechSynthesisUtterance(word);
+            utterance.lang = 'en-US';
+            speechSynthesis.speak(utterance);
+        }        
+
+        async function getWordByDifficulty(difficulty) {
+            const apiKey = 'wyrr8k2n008rmpru2snzy26yq9aaki6zfipizi5p6nqin3n4u';
+            let apiUrl;
+
+            switch (difficulty) {
+                case 'easy':
+                    const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+                    const randomLetter = alphabet[Math.floor(Math.random() * alphabet.length)];
+                    return randomLetter;
+                case 'medium':
+                    apiUrl = `https://api.wordnik.com/v4/words.json/randomWord?api_key=${apiKey}&includePartOfSpeech=noun&minCorpusCount=10000&maxCorpusCount=50000`;
+                    break;
+                case 'hard':
+                    apiUrl = `https://api.wordnik.com/v4/words.json/randomWord?api_key=${apiKey}&minCorpusCount=50000`;
+                    break;
+                default:
+                    console.error('Invalid difficulty');
+                    return null;
+            }
+
+            try {
+                const response = await fetch(apiUrl);
+                const data = await response.json();
+                return data.word.toLowerCase();
+            } catch (error) {
+                console.error('Error fetching word from Wordnik:', error);
+                return null;
+            }
+        }
+
+        async function startListening(difficulty) {
+            const word = await getWordByDifficulty(difficulty);
+            if (word) {
+                displayWord(word);
+
+                recognition = new webkitSpeechRecognition() || new SpeechRecognition();
+                recognition.onresult = function(event) {
+                    const userSpeech = event.results[0][0].transcript.toLowerCase();
+                    checkPronunciation(userSpeech, word);
+                };
+                recognition.onend = function() {
+                    recognition.start();
+                };
+                recognition.onaudiostart = function() {
+                    console.log('Audio started');
+                };
+                recognition.onspeechend = function() {
+                    console.log('Speech ended');
+                };
+                recognition.onaudioend = function() {
+                    console.log('Audio ended');
+                };
+                recognition.onresult = function(event) {
+                    const userSpeech = event.results[0][0].transcript.toLowerCase();
+                    checkPronunciation(userSpeech, word);
+                    const textResult = document.getElementById('result');
+                    textResult.innerText = `Text Recognized: ${userSpeech}`;
+                };
+                recognition.onsoundstart = function() {
+                    console.log('Sound started');
+                };
+                recognition.onsoundend = function() {
+                    console.log('Sound ended');
+                };
+                recognition.onvolumechange = function(event) {
+                    const volume = event.volume;
+                    updateAudioLevelIndicator(volume);
+                };
+                recognition.start();
+
+                document.getElementById('result').innerText = 'Listening...';
+            } else {
+                alert('Error fetching word. Please try again later.');
+            }
+        }
+
+        function checkPronunciation(userSpeech, word) {
+            if (userSpeech.includes(word)) {
+                document.getElementById('result').innerText = 'Correct! Well done.';
+            } else {
+                document.getElementById('result').innerText = 'Incorrect. Try again.';
+            }
+
+            recognition.stop();
+        }
+
+        function updateAudioLevelIndicator(volume) {
+            const level = Math.floor(volume * 100);
+            audioLevelIndicator.innerText = level;
+        }
+    </script>
+</body>
+</html>

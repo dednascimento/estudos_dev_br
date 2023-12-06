@@ -1,4 +1,51 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 25px;
+    padding: 5px;
+    font-size: 40px;
 }
+
+/* Os pseudo-elementos, são atribuidos com 2 pontos após o seletor, eles são elementos criados pela estilização, não são realmente reais no html da página */
+
+ul li::after {
+    content: '-';
+    color: white;
+    background-color: rgb(4, 4, 4);
+}
+/* Acima está o depois e abaixo está o antes */
+
+ul li::before {
+    content: '----';
+    color: white;
+    background-color: rgb(205, 205, 206);
+    display: block;
+}
+
+p::first-letter {
+    font-size: 200px;
+    display: block;
+    float: left;
+    margin: 0 45px 25px 0;
+}
+
+/* Margin funciona no sentido do relógio, Cima - Direito - Baixo - Esquerda */
+
+
+/* Texto selecionado */
+p::selection {
+    background-color: black;
+    color: white;
+}
+
+/* Primeira linha */
+p::first-line {
+    text-decoration: underline;
+}
+
+/* Manipular 'placeholder' */
+
+input::placeholder {
+    color: red;
+    font-size: 40px;
+    padding: 15px;
+}
+

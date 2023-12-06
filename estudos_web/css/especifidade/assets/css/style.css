@@ -1,0 +1,46 @@
+* {
+    margin: 40px;
+    padding: 0;
+    font-size: 30px;
+}
+
+/* 
+    ID      Classes, Atributos e pseudo-classes     Elementos e pseudo-elementos
+    1       0                                       0
+    1       1                                       0
+    1
+
+    */
+
+
+    /* Quando deixamos o mouse parado por cima, vemos o nivel de especifidade do item, podemos observar abaixo qual seletor é priorizado na lista */
+
+
+#p {
+    background-color: red;
+}
+
+#p.p {
+    background-color: yellow;
+}
+
+p#p.p {
+    background-color: pink;
+}
+
+/* Misturando seletores, podemos aumentar a especifidade do item */
+
+body#b.b p#p.p {
+    background-color: black;
+    color: white;
+}
+
+/* Ranking de Peso
+
+    1. !important;
+    2. Style (Inline);
+    3. Empate;
+    4. Especificidade
+
+
+*/

@@ -2,3 +2,26 @@
     margin: 0;
     padding: 0;
 }
+
+.texto {
+    box-sizing:content-box;
+    background-color: red;
+    display: block;
+    width: 180px;
+    max-width: 600px;
+    height: 180px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+/*  Max-width é a proporção máxima de tall conteúdo selecionado, assim se o monitor for maior, não terá risco de ultrapassar e ficar algo desorganizado */
+
+/* Já o box-sizing é a propriedade responsável por definir se o max-sizing irá contabilizar para quais determinados atributos do contéudo
+
+Box-sizing: border-box (Contéudo + Borda)
+max-width: (Limite dos dois, automaticamente a borda não irá crescer mais do que o max-width)
+
+Padding-box (Conteudo + Padding)
+Content-box é o padrão (Somente conteúdo)
+
+*/

@@ -1,4 +1,46 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+.grid .area-menu {
+    background-color: rgb(8, 8, 139);
+    color: white;
+    height: 50px;
+}
+
+.grid .area-sidebar {
+    float: left;
+    background-color: red;
+    width: 150px;
+    max-height: 100%;
+    height: 400px;
+}
+
+.grid .area-conteudo {
+    clear: right;
+    background-color: silver;
+    max-width: 100%;
+    height: 400px;
+}
+
+.grid .area-cabecalho {
+    background-color: purple;
+    max-width: 100%;
+    height: 100px;
+    clear: both;
+}
+
+/* 
+
+----> Display: inline-block
+Serve para ocupar sempre a tela disponivel, uma mistura de inline-block, primeiro ele vai tentar ocupando a linha, caso não consiga ele vai ser reajustando por coluna, depois as linhas dessa coluna
+
+-----> Float:left
+Serve para ocupar sempre a esquerda, enquanto a esquerda estiver disponivel ele irá ocupar o espaço disponível
+
+-----> Clear:left
+Serve para adicionar o item portanto que o lado mencionado esteja limpo, no caso se 'Left' estiver vazio colocarão no espaço dele, ou podemos usar o 'both' para ambos lados
+
+*/

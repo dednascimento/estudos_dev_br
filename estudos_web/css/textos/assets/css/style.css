@@ -1,0 +1,58 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 
+    - Medida Padrão: 16px (Do navegador)
+
+    Existem medidas absolutas e relativas, 
+    
+    
+    Absolutas: são medidas independentes, então não tendem a se alterar.
+
+    Relativas: São medidas que dependem de algum fator, seja HTML ou a Tag PAI do item.
+*/
+
+
+div { 
+    box-sizing: content-box;
+    padding: 0 25px;
+    width: 72.5vw;
+    height: 100vh;
+}
+
+.yellou {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+/* 
+
+    - Em: Tamanho relativo á TAG pai, 
+    a proporção é baseada em multiplicação
+
+    - REM: Relativo á tag 'html', calculo feito da mesma maneira que o 'EM' 
+
+    Calulo das proporções acima:
+    - 1rem/em = 1 * [valor em pixel's]
+
+    -VW/VH: que trabalham sob o 'Width' e o 'Height' da páginan então se queremos algo que se adapte a tela, com certeza essa medida será muito importante! 
+
+    - %: muito usada, a porcentagem é baseada no tamanho da tag pai
+
+    - VMIN/VMAX: tamanho mínimo da viewport ou tamanho máximo, sendo 1vmin = 1 * [tamanho máximo/mínimo de proporção (seja o height ou o width)]
+
+
+*/

@@ -2,3 +2,60 @@
     margin: 0;
     padding: 0;
 }
+
+.box-blue {
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+}
+
+.box-red {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    position: absolute;
+    z-index: 1;
+    left: 400px;
+}
+
+.box-green {
+    width: 300px;
+    height: 300px;
+    background-color: green;
+}
+
+/* 
+    Aprendemos coisas muito importantes!
+
+
+    Todo item geralmente recebe o 'position: static', a posição natural deles.
+
+
+    --> Postion Absolute
+    Temos o position absolute que meio que torna aquele item indenpende (Caso a tag do pai dele não seja relativa)
+
+    Atravéz do position absolute podemos definir a posição absoluta daquele item
+
+
+    --> Position Relative
+    Temos o position relative que serve para organizar os itens relativamente aos irmão ou a tag pai, 
+    
+    No exemplo dos quadrados acima, todos ficam enfileirados, a position relativa irá afetar o espaçamento dele com base na posição do ultimo item relativo.
+
+    --> Position Fixed
+    Ser da mesma forma que o absolute, só que o Fixed, permite que mesmo se a página tiver scroll aquele item continuará lá, mesmo rolando para baixo, como se fosse fixo mesmo (Exemplo: menu ou botão flutuante)
+
+    --> Position Sticky
+    Ele é funciona para itens que tem scroll, e geralmente á mais de um no conteúdo, pois ele vai scrollando e sempre que aparece outro item daquele ele sobrepoe o passado
+
+
+
+
+    --> Fato curioso do Relative e Absolute
+
+    Caso a TAG pai do Absolute seja relativa, o Absolute não será totalmente absoluta, ele poderá se movimentar em relação ao espaço da sua tag pai.
+
+    --> Camadas
+    Atrávez do 'z-index' quanto maior o número maior o peso daquela camada.
+
+*/

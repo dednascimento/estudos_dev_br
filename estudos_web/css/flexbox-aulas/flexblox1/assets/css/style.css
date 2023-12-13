@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.flex-content {
+    background-color: yellow;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    height: 500px;
+    font-size: 28px;
+}
+
+.flex-item {
+    background-color: red;
+    margin: 20px;
+    width: 120px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+
+/* 
+
+- Space-around: espaço igual a patir do primeiro termo, deixando como se tivesse metade de um espaço antes de um e outro metado no ultimo item 
+
+- Space-between: espaço igual da mesma forma, só que sem espaço antes do primeiro e do ultimo item
+
+- Space-evenly: espaço igual antes do primeiro item e de todos após (incluindo no final)
+
+*/

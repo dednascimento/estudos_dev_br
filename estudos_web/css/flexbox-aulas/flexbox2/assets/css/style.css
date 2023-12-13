@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.flex-content {
+    background-color: yellow;
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items:flex-start;
+    height: 100px;
+    font-size: 28px;
+}
+
+.flex-item {
+    background-color: red;
+    width: 100px;
+}
+
+
+/* 
+
+    Flex-wrap: para quebra de linha, onde podemos determinar uma quebra de linha, e conforme vamos reduzir o item vai se quebrando, conforme alinhamos no 'Justify-content' e no 'Align-items'
+
+    Align-content: é semelhando ao 'Align-items' a diferença é que os items nele são alinhados no formato 'column' no eixo 'y', já no align items é no formato 'row'(eixo X)
+
+*/

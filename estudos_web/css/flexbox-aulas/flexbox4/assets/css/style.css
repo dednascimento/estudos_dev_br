@@ -4,63 +4,35 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: 20px;
+}
 
-.flex-content {
+.two-columns {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-flow: row nowrap;
-    background-color: yellow;
-    height: 100vh;    
-    gap: 10px;
 }
 
-.flex-item {
-    width: 100%;
-    color: white;
-    background-color: red;
+p {
+    margin: 0 0 20px;
 }
 
-.flex-item:nth-child(3) {
-    color: black;
-    background-color: pink;
-    align-self: flex-end;
-    order: 3;
+.two-columns .col{
+    display: flex;
+    flex-direction: column;
+    background: green;
+    margin: 15px;
+    padding: 30px;
+}  
+
+.gallery {
+    flex-flow: row wrap;
+    display: flex;
 }
 
-.flex-item:nth-child(2) {
-    color: black;
-    background-color: rgb(192, 255, 225);
-    align-self:stretch;
-    order: 4;
+.gallery .img {
+    flex: 1 0 18%;
+    height: 50px;
+    background-color: rgba(4, 108, 0, 0.867);
+    margin: 10px;
 }
 
-.flex-item:nth-child(5) {
-    color: black;
-    background-color: rgb(227, 255, 192);
-    align-self:center;
-    order: 2;
-}
-
-
-/* 
-
-    Flex-flow: Uma mistura do 'flex-direction' e do 'flex-wrap', logo com ele podemos definir a organização e o formato da quebra. 
-
-    Flex-grow: o item passará a se esticar de forma responsiva para preencher o espaço de acordo com o número definido (0 ou 1)
-
-    Flex-basis: É uma proporção distribuida entre os items automaticamente, como se fosse um min-width.
-
-    Flex-shrink: é uma base para que o item não diminua mais ao alcançar a medida definida no 'Flex-basis' (0 ou 1)
-
-    ---- Temos o 'Flex' como um atalhos dos 3 itens acima:
-        flex: [grow] [shrink] [basis]
-
-
-    Align-self: podemos estar utilizando para alinhar um item em especifico daquele conteúdo, no caso utilizando ou o ID ou como ':nth-child()'
-
-    Order: pode ser utilizado para alinhar os conteúdos e a ordem de exibixão dentro do conteúdo.
-
-    Gap: espaço entre as colunas/linhas
-
-*/

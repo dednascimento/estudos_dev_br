@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+.grid { 
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 2fr));
+    /* grid-template-rows: repeat(2, 1fr 2fr); */
+    gap: 30px;
+}
+
+.grid div {
+    background-color:coral;
+    min-height: 100px;
+}
+
+.grid div:nth-child(5) {
+    grid-column-start: 4;
+    grid-column-end: 2;
+}
+
+.grid div:nth-child(10) {
+    background-color: darkred;
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+
+/* 
+
+ 'fr' é uma medida de 'fragmento' como se fosse um espaço vazio da tela...
+
+ 'grid-template-column' Organizar em quantos frames vamos dividir nosso layout em grid's' por colunas
+ 'grid-template-rows'... por linhas
+
+
+ `grid-template-columns: repeat(auto-fill, minmax(320px, 2fr));`
+
+ O comando acima, mostra como dividimos o espaços de nossos grid, seja o 'columns' ou 'linhas'. Span está aciado ao espaços ou agrupamento das células
+
+*/

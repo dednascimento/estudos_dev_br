@@ -44,6 +44,17 @@ body {
 
  `grid-template-columns: repeat(auto-fill, minmax(320px, 2fr));`
 
- O comando acima, mostra como dividimos o espaços de nossos grid, seja o 'columns' ou 'linhas'. Span está aciado ao espaços ou agrupamento das células
+ O comando acima, mostra como dividimos o espaços de nossos grid, seja o 'columns' ou 'linhas'. 
+ 
+--------------------------------------------
+grid-row: span 2;
+--> Ao invés utilizarmos 
+grid-column-start: 4;
+grid-column-end: 2;    
+
+--> Span vem diretamente do espaço ocupado.
+--------------------------------------------
+ 
+ 
 
 */

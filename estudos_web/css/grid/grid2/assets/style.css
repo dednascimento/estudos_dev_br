@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+.grid { 
+    max-width: 1200px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: [um] 1fr 
+    [dois] 1fr 
+    [tres] 1fr 
+    [quatro];
+    grid-template-rows: repeat(7, 1fr)
+
+}
+
+.grid div {
+    background-color:coral;
+    min-height: 100px;
+}
+
+.grid div:nth-child(4) {
+    background-color: darkred;
+    grid-area: 1 / um / 2 / quatro;
+}
+
+/* 
+ - Grid área:
+    É um atalhos para linhas e colunas, só que geralmente não são muitos usados, somente de casos á casos, mas geralmente usam mais os recursos indivuais 'column' e 'rows'
+
+ - Atributo [Autofio]:
+    Serve para definir e reajustas as colunas automáticamente pelo espaço da tela
+
+*/
+
+
+
+/* 
+    - grid-column: 1 / 4;
+    - Criamos um campos que ocupa do 4 ao 6, uma linha inteira
+    - grid-row: span 2;
+*/

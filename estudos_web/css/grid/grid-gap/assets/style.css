@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+.grid { 
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+.container {
+    margin-right: -20px;
+    margin-bottom: -40px;
+}
+
+.grid div {
+    background-color:coral;
+    min-height: 100px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* A propriedade GAP, não é suportada em muitos navegados, inclusive no mobile, por conta disso o recurso de assebilidade reduz, logo para resolver alguns bugs de espaçamento usamos o as propriedades padrões */

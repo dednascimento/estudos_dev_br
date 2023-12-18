@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    overflow-x: hidden;
+
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: 
+            'menu menu'
+            'sidebar main';
+}
+
+.navbar {
+    grid-area: menu;
+    background-color: rgb(229, 57, 53);
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 9.05vh;
+    justify-content: start;
+    padding-left: 2%;
+    align-items: center;
+}
+
+.navbar > .logo-navbar {
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    font-size: 25px;
+    padding-right: 25.5%;
+}
+
+.navbar > .input-search > input[type="text"] {
+    background-color: rgba(255, 255, 255, 0.303);
+    outline: none;
+    border: 0px solid #ccc;
+    width: 37.5vw;
+    height: 6.5vh;
+    border-radius: 7px;
+}
+
+.navbar > .input-search > input[type="text"]::placeholder {
+    color: #dadce0;
+    padding-left: 10%;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 0px 0px 0px black;  
+    z-index: 100;  
+}
+
+.sidebar > ul > li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.sidebar > ul > li > a {
+    position: relative;
+    left: 10%;
+    font-size: 15px;
+    padding-right: 5%;
+}
+
+.container {
+    width: 100%;
+    min-height: 91vh;
+    overflow-y: scroll;
+    background-color: #d0d0d0;
+    padding: 2%;
+}
+
+
+
+.content {
+    position:absolute;
+    top: 15vh;
+    height: 100%;
+    width: 80%;
+    background-color: #efeeee;
+    z-index: 1;
+}

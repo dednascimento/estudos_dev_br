@@ -1,0 +1,71 @@
+
+/* Importação de Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca&family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400&family=Roboto&display=swap');
+
+/* 
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'navbar'
+    'content'
+    'footer';
+    max-width: 1220px;
+    background-color: rgb(23, 23, 71);
+}
+
+
+.navbar {
+    background-color: white;
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    grid-area: navbar;
+}
+
+.navbar > .logotipo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.menu-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu-options > li {
+    list-style: none;
+    height: 100%;
+    width: 7vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
+}
